@@ -1,3 +1,4 @@
+
 SetEnv PHP_VER 5_4
 SetEnv REGISTER_GLOBALS 0
 
@@ -112,8 +113,8 @@ RewriteEngine on
 #
 # If you're not running Elgg in a subdirectory on your site, but still getting lots
 # of 404 errors beyond the front page, you could instead try:
-#
-#RewriteBase /
+
+RewriteBase /test/
 
 
 # If your users receive the message "Sorry, logging in from a different domain is not permitted"
