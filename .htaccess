@@ -1,3 +1,7 @@
+AuthName "Identification requise"
+AuthType Basic
+AuthUserFile "/homez.764/sortiesv/www/test/.htpasswd"
+Require valid-user
 
 SetEnv PHP_VER 5_4
 SetEnv REGISTER_GLOBALS 0
