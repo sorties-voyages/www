@@ -16,6 +16,10 @@
 	</requires>
 	<suggests>
 		<type>plugin</type>
+		<name>profile_manager</name>
+	</suggests>
+	<suggests>
+		<type>plugin</type>
 		<name>tinymce</name>
 	</suggests>
 </plugin_manifest>

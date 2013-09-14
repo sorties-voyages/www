@@ -338,9 +338,9 @@
 		// datepicker		
 		'profile_manager:datepicker:trigger' => 'Select a date',
 		'profile_manager:datepicker:output:dateformat' => '%a %d %b %Y', // For available notations see http://nl.php.net/manual/en/function.strftime.php
-		'profile_manager:datepicker:input:localisation' => '', // change it to the available localized js files in custom_profile_fields/vendors/jquery.datepick.package-3.5.2 (e.g. jquery.datepick-nl.js), leave blank for default 
-		'profile_manager:datepicker:input:dateformat' => '%m/%d/%Y', // Notation is based on strftime, but must result in output like http://keith-wood.name/datepick.html#format
-		'profile_manager:datepicker:input:dateformat_js' => 'mm/dd/yyyy', // Notation is based on strftime, but must result in output like http://keith-wood.name/datepick.html#format
+		'profile_manager:datepicker:input:localisation' => 'jquery.datepick-fr.js', // change it to the available localized js files in custom_profile_fields/vendors/jquery.datepick.package-3.5.2 (e.g. jquery.datepick-nl.js), leave blank for default 
+		'profile_manager:datepicker:input:dateformat' => '%d/%m/%Y', // Notation is based on strftime, but must result in output like http://keith-wood.name/datepick.html#format
+		'profile_manager:datepicker:input:dateformat_js' => 'dd/mm/yyyy', // Notation is based on strftime, but must result in output like http://keith-wood.name/datepick.html#format
 
 		'profile_manager:input:multi_select:empty_text' => 'Please select ...',
 	

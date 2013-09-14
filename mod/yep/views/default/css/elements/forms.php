@@ -402,7 +402,7 @@ input[type="radio"] {
 **************************************** */
 #event_manager_event_search_advanced_container .elgg-input-checkboxes label {
 	display: block;
-	width: 350px;
+	width: 300px;
 }
 
 /* ***************************************
