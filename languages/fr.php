@@ -324,8 +324,8 @@ $french = array(
 	'friends' => "Contacts",
 	'friends:yours' => "Vos contacts",
 	'friends:owned' => "Les contacts de %s",
-	'friend:add' => "Ajouter un contact",
-	'friend:remove' => "Retirer un contact",
+	'friend:add' => "Demander en ami",
+	'friend:remove' => "Retirer des amis",
 
 	'friends:add:successful' => "Vous avez ajouté %s à vos contacts.",
 	'friends:add:failure' => "%s n'a pas pu être ajouté(e) à vos contacts. Merci de réessayer ultérieurement.",
@@ -762,7 +762,7 @@ $french = array(
 	'admin:user:delete:yes' => "Utilisateur supprimé",
 	'admin:user:self:delete:no' => "Vous ne pouvez pas vous supprimer",
 
-	'admin:user:resetpassword:yes' => "Mot de passe réinitialisé, utilisateur notifié.",
+	'admin:user:resetpassword:yes' => "Mot de passe réinitialisé, utilisateur notifié. Votre nouveau mot de passe vous a été envoyé par e-mail.",
 	'admin:user:resetpassword:no' => "Le mot de passe n'a pas pu être réinitialisé.",
 
 	'admin:user:makeadmin:yes' => "L'utilisateur est maintenant un administrateur.",
@@ -848,7 +848,7 @@ $french = array(
 	'banned' => "Banni",
 	'enable' => "Activer",
 	'disable' => "Désactiver",
-	'request' => "Requête",
+	'request' => "Demander",
 	'complete' => "Complété",
 	'open' => "Ouvrir",
 	'close' => "Fermer",
