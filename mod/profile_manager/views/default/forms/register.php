@@ -137,15 +137,15 @@ if(elgg_get_plugin_setting("show_account_hints", "profile_manager") == "yes"){
 		</div>
 	</div>
 	<?php 
+		echo elgg_view('register/extend');
 		echo $terms;
 	?>
 </fieldset>
 
 <?php
 // view to extend to add more fields to the registration form
-echo elgg_view('register/extend');
 // Add captcha hook
-echo elgg_view('input/captcha');
+// echo elgg_view('input/captcha');
 
 echo "</div>";
 
