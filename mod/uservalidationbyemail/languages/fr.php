@@ -9,12 +9,12 @@
 $french = array(
 	'admin:users:unvalidated' => "Invalidés",
 	
-	'email:validate:subject' => "%s veuillez confirmer votre adresse de courriel !",
+	'email:validate:subject' => "%s veuillez confirmer votre adresse e-mail !",
 	'email:validate:body' => "%s,
 
 avant de pouvoir commencer à utiliser %s, vous devez confirmer votre adresse mail.
 
-Veuillez confirmer votre adresse de courriel en cliquant sur le lien suivant:
+Veuillez confirmer votre adresse e-mail en cliquant sur le lien suivant:
 
 %s
 
@@ -23,8 +23,8 @@ Si vous ne pouvez pas cliquer sur le lien, copier et coller le dans votre naviga
 %s
 %s
 ",
-	'email:confirm:success' => "Vous avez validé votre adresse de courriel !",
-	'email:confirm:fail' => "Votre adresse de courriel n'a pu être vérifiée...",
+	'email:confirm:success' => "Vous avez validé votre adresse e-mail !",
+	'email:confirm:fail' => "Votre adresse e-mail n'a pu être vérifiée...",
 
 	'uservalidationbyemail:registerok' => "Pour activer votre compte, veuillez confirmer votre adresse e-mail en cliquant sur le lien qui vient de vous être envoyé (si vous ne recevez rien, veuillez vérifier votre dossier Spam).",
 	'uservalidationbyemail:login:fail' => "Votre compte n'est pas validé, par conséquent la tentative de connexion a échoué. Un autre e-mail de validation a été envoyé.",
