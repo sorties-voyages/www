@@ -37,6 +37,7 @@ foreach ($profile_fields as $shortname => $valuetype) {
 	// must decode in utf8 or string corruption occurs. see #1567.
 	$value = get_input($shortname);
 	if (is_array($value)) {
+		ksort($value);
 		array_walk_recursive($value, 'profile_array_decoder');
 	} else {
 		$value = _elgg_html_decode($value);
