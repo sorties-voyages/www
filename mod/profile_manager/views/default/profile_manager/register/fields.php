@@ -111,9 +111,9 @@
 					$value = $$sticky_name;
 				}
 				
-				if(is_array($value)){
-					$value = implode(", ", $value);
-				}
+				// if(is_array($value)){
+					// $value = implode(", ", $value);
+				// }
 				$class = "";
 				if($field->mandatory == "yes"){
 					$class = " class='mandatory'";
