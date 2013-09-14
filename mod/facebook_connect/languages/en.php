@@ -5,6 +5,8 @@
 
 $english = array(
 	'facebook_connect' => 'Facebook Services',
+	
+	'facebook_connect:button' => 'facebook_login.png',
 
 	'facebook_connect:requires_oauth' => 'Facebook Services requires the OAuth Libraries plugin to be enabled.',
 
