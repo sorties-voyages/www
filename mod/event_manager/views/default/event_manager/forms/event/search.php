@@ -44,8 +44,10 @@
 	
 	if(elgg_is_logged_in()){
 		$form_body .= "<td>";
+		if (elgg_is_admin_logged_in()) {
+			$form_body .= elgg_view('input/checkboxes', array('id' => 'owning', 'name' => 'owning', 'value' => 0, 'options' => array(elgg_echo('event_manager:list:owning')=>'1')));
+		}
 		$form_body .= elgg_view('input/checkboxes', array('id' => 'attending', 'name' => 'attending', 'value' => 0, 'options' => array(elgg_echo('event_manager:list:meattending')=>'1')));
-		$form_body .= elgg_view('input/checkboxes', array('id' => 'owning', 'name' => 'owning', 'value' => 0, 'options' => array(elgg_echo('event_manager:list:owning')=>'1')));
 		$form_body .= elgg_view('input/checkboxes', array('id' => 'friendsattending', 'name' => 'friendsattending', 'value' => 0, 'options' => array(elgg_echo('event_manager:list:friendsattending')=>'1')));
 		$form_body .= "</td>";
 	}
