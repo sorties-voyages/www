@@ -9,7 +9,12 @@
 	* @copyright Coldtrick IT Solutions 2009
 	* @link http://www.coldtrick.com/
 	*/
-
+	
+	if (elgg_is_sticky_form('register')) {
+		extract(elgg_get_sticky_values('register'));
+		elgg_clear_sticky_form('register');
+	}
+	
 	$profile_icon = elgg_get_plugin_setting("profile_icon_on_register", "profile_manager");
 	$profile_type_selection = elgg_get_plugin_setting("profile_type_selection", "profile_manager");
 	

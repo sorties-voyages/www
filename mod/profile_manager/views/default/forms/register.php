@@ -13,7 +13,6 @@ $name = get_input('n');
 
 if (elgg_is_sticky_form('register')) {
 	extract(elgg_get_sticky_values('register'));
-	elgg_clear_sticky_form('register');
 }
 
 // must accept terms
