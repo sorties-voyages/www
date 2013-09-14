@@ -10,7 +10,6 @@
  */
 
 // convert timestamps to text for display
-
 if (empty($vars['value'])) {
 	$vars['value'] = '';
 } elseif (is_numeric($vars['value'])) {
@@ -21,7 +20,7 @@ if (empty($vars['value'])) {
 	} else {
 		$date = explode('-', $vars['value']);
 	}
-	$vars['value'] = gmdate(elgg_echo('yep:date:format'), mktime(0, 0, 0, $date[1], $date[2], $date[0]));
+	$vars['value'] = date(elgg_echo('yep:date:format'), mktime(0, 0, 0, $date[1], $date[2], $date[0]));
 }
 
 echo $vars['value'];
