@@ -1,27 +1,26 @@
-<?php
-/**
- * Date
- * Displays a properly formatted date
- *
- * @package Elgg
- * @subpackage Core
- *
- * @uses $vars['value'] Date as text or a Unix timestamp in seconds
- */
+<?php 
+	/**
+	* Profile Manager
+	* 
+	* Output view of a datepicker
+	* 
+	* @package profile_manager
+	* @author ColdTrick IT Solutions
+	* @copyright Coldtrick IT Solutions 2009
+	* @link http://www.coldtrick.com/
+	*/
 
-// convert timestamps to text for display
-
-if (empty($vars['value'])) {
-	$vars['value'] = '';
-} elseif (is_numeric($vars['value'])) {
-	$vars['value'] = gmdate(elgg_echo('yep:date:format'), $vars['value']);
-} else {
-	if (is_array($vars['value'])) {
-		$date = $vars['value'];
+	$dateformat = elgg_echo("profile_manager:datepicker:output:dateformat");
+	echo "<span title='" . $vars['value'] . "'>";
+	
+	if((date($dateformat, $vars['value']) !== false) && (date($dateformat, $vars['value']) != date($dateformat, 0))){
+		// probably a timestamp, we can format it
+		echo strftime($dateformat, $vars['value']);
+	} elseif(($new = strtotime($vars["value"])) !== false){
+		// time in date format
+		echo strftime($dateformat, $new);
 	} else {
-		$date = explode('-', $vars['value']);
+		// some other format, just present it
+		echo $vars['value'];
 	}
-	$vars['value'] = gmdate(elgg_echo('yep:date:format'), mktime(0, 0, 0, $date[1], $date[2], $date[0]));
-}
-
-echo $vars['value'];
+	echo "</span>";

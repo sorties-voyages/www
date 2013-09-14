@@ -47,7 +47,7 @@ function yep_init() {
 	// Add custom fields to the admin menu options
 	elgg_register_plugin_hook_handler('action', 'admin/menu/save', 'yep_menu_save_action');
 	
-	 //block user registration if they don't check the box
+	 //block user registration if they put a bad date of birth
 	elgg_register_plugin_hook_handler('action', 'register', 'yep_check_register', 100);
 	elgg_register_plugin_hook_handler('action', 'profile/edit', 'yep_check_profile', 100);
 	
