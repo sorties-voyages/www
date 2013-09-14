@@ -131,6 +131,7 @@
 				
 				// use create_metadata to listen to default access
 				if (is_array($value)) {
+					ksort($value);
 					$i = 0;
 					foreach($value as $interval) {
 						$i++;
