@@ -53,4 +53,4 @@ if (is_numeric($vars['value'])) {
 }
 
 $attributes = elgg_format_attributes($vars);
-echo "<input type=\"text\" $attributes />";
+echo "<input type=\"text\" autocomplete=\"off\" $attributes />";
