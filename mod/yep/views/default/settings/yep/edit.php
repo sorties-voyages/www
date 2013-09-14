@@ -1,0 +1,1 @@
+<?php $type = get_input('type', 'travels');echo elgg_view('settings/yep/menu', array('type' => $type));echo elgg_view('settings/yep/content', array('type' => $type, 'widget' => $vars['entity']));
