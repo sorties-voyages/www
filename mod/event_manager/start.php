@@ -1,6 +1,6 @@
 <?php
 	
-	define("EVENT_MANAGER_FORMAT_DATE_EVENTDAY", 	"Y-m-d");
+	define("EVENT_MANAGER_FORMAT_DATE_EVENTDAY", 	elgg_echo("event_manager:format_date"));
 	
 	define("EVENT_MANAGER_SEARCH_LIST_LIMIT", 		10);
 	define("EVENT_MANAGER_SEARCH_LIST_MAPS_LIMIT", 	50);

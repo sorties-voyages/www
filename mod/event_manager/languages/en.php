@@ -2,6 +2,7 @@
 
 	$english = array(
 		'event_manager' => 'Event Manager',
+		'event_manager:format_date' => 'Y-m-d',
 		'groups:enableevents' => 'Enable group events',
 		'event_manager:group' => 'Group events',
 		'event_manager:group:more' => 'More events',
