@@ -111,7 +111,9 @@ if (sizeof($input) > 0) {
 	elgg_trigger_event('profileupdate', $owner->type, $owner);
 
 	elgg_clear_sticky_form('profile:edit');
-	system_message(elgg_echo("profile:saved"));
+	if (!elgg_is_admin_logged_in()) {
+		system_message(elgg_echo("profile:saved"));
+	}
 }
 
 forward($owner->getUrl());
