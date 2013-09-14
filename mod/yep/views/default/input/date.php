@@ -58,7 +58,7 @@ END;
 		    showTrigger: '<img src="<?php echo $vars['url']; ?>mod/profile_manager/vendors/jquery.datepick.package-4.0.5/calendar.gif" alt="Popup" class="trigger">',
 		    onSelect: function(dates) {
 			    var date = dates[0];
-			    $('#<?php echo $internal_id; ?>_alt').val(date);
+			    $('#<?php echo $internal_id; ?>_alt').val(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate());
 			}
 		});
 	});
