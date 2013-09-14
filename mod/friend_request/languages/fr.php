@@ -5,7 +5,7 @@ $language = array (
   'friend_request:title' => 'Demandes d\'ami pour : %s',
   'friend_request:new' => 'Nouvelle demande d\'ami',
   'friend_request:friend:add:pending' => 'Demande d\'ami en attente',
-  'friend_request:newfriend:subject' => '%s veut devenir votre ami!',
+  'friend_request:newfriend:subject' => '%s veut devenir votre ami !',
   'friend_request:newfriend:body' => '%s veulent devenir votre ami ! Mais ils attendent que vous approuviez votre requête... alors connectez-vous pour les approuver !
 
 Vous pouvez voir les demandes d\'ami en attente sur :

@@ -2,7 +2,6 @@
 	$title = $vars["title"];
 	$message = nl2br($vars["message"]);
 	$language = get_current_language();
-	$url = elgg_get_site_url();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $language; ?>" lang="<?php echo $language; ?>">
@@ -29,53 +28,76 @@
 			
 			#notification_container {
 				padding: 20px 0;
-				width: 600px;
+				width: 800px;
 				margin: 0 auto;
 			}
 		
 			#notification_header {
-				text-align: right;
-				padding: 0 0 10px;
+				background: #0086F1;
+				margin: 0 0 10px 0;
+				padding: 5px 0 10px;
 			}
-			
+		
 			#notification_header a {
 				text-decoration: none;
 				font-weight: bold;
-				color: #0054A7;
+				color: #FFFFFF;
 				font-size: 1.5em;
 			} 
-		
+			
+			#notification_header_logo {
+				float: left;
+			}
+			
+			#notification_header_logo img {
+				border: none;
+				margin: 0 10px 0 10px;
+			}
+			
 			#notification_wrapper {
-				background: #DEDEDE;
-				padding: 10px;
+				background: #0046a9;
+				padding: 5px;
 			}
 			
 			#notification_wrapper h2 {
 				margin: 5px 0 5px 10px;
-				color: #0054A7;
+				color: #FFFFFF;
 				font-size: 1.35em;
 				line-height: 1.2em;
 			}
 			
+			#notification_wrapper a  {
+				color: #0055DD;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			
+			#notification_wrapper a:hover {
+				text-decoration: underline;
+			}
+			
 			#notification_content {
 				background: #FFFFFF;
-				padding: 10px;
+				color: #0054A7;
+				padding: 20px;
 			}
 			
 			#notification_footer {
-				
 				margin: 10px 0 0;
-				background: #B6B6B6;
+				background: #222222;
+				color: #888888;
 				padding: 10px;
 				text-align: right;
 			}
 			
-			#notification_footer_logo {
-				float: left;
+			#notification_footer a  {
+				color: #AAAAAA;
+				font-weight: bold;
+				text-decoration: none;
 			}
 			
-			#notification_footer_logo img {
-				border: none;
+			#notification_footer a:hover {
+				color: #EEEEEE;
 			}
 			
 			.clearfloat {
@@ -89,6 +111,9 @@
 	
 		<div id="notification_container">
 			<div id="notification_header">
+				<a href="<?php echo $vars["config"]->site->url; ?>" id="notification_header_logo">
+					<img src="<?php echo $vars["config"]->site->url; ?>mod/yep/graphics/logo.png" height="30" />
+				</a>
 				<?php 
 					$site_url = elgg_view("output/url", array("href" => $vars["config"]->site->url, "text" => $vars["config"]->site->name));
 					echo $site_url;
@@ -102,10 +127,7 @@
 				</div>
 			</div>
 			<div id="notification_footer">
-				<a href="<?php echo $url; ?>" id="notification_footer_logo">
-					<img src="<?php echo $url; ?>mod/yep/graphics/logo.png" />
-				</a>
-				
+				&nbsp;
 				<?php 
 					if(elgg_is_logged_in()){
 						$settings_url = $vars["url"] . "settings";
