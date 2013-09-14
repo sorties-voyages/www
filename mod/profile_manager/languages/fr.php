@@ -356,11 +356,11 @@
 		'profile_manager:register:mandatory' => "Les champs marqués d'une * sont obligatoires",
 
 		// register account field hints
-		'profile_manager:register:hints:name' => "Enter the name which will be shown on your profile",
-		'profile_manager:register:hints:username' => "You can use your username to login",
-		'profile_manager:register:hints:email' => "This emailadres will be used to send you mails. Other users can not see this emailadres",
-		'profile_manager:register:hints:password' => "You will need a password to login to the site",
-		'profile_manager:register:hints:passwordagain' => "Enter the same password again for validation",
+		'profile_manager:register:hints:name' => "Entrez le nom qui sera affiché sur votre profil",
+		'profile_manager:register:hints:username' => "Vous pourrez utiliser votre identifiant pour vous connecter",
+		'profile_manager:register:hints:email' => "Cette adresse e-mail sera utilisée pour vous envoyer des mails. Les autres utilisateurs ne peuvent pas voir cette adresse e-mail",
+		'profile_manager:register:hints:password' => "Vous aurez besoin d'un mot de passe pour vous connecter au site",
+		'profile_manager:register:hints:passwordagain' => "Entrez le même mot de passe pour validation",
 		
 		// register profile icon
 		'profile_manager:register:profile_icon' => 'This site requires you to upload a profile icon',
